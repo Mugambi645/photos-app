@@ -1,0 +1,180 @@
+# ==========================================
+# Explicit Trackers / Exceptions
+# ==========================================
+!*.cache.json
+!.env.example
+!.env.template
+.env
+.env/
+# ==========================================
+# Python Virtual Environments
+# ==========================================
+# Ignore all standard virtual environments, but track `.venv.tracked` if explicitly created for pinned dev specs.
+.venv*
+!.venv.tracked/
+
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+
+# Linux / Unix
+*~
+.fuse_hidden*
+.directory
+.trash
+
+# Editors & IDEs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# Shared & Service Environment Variables / Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.test
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# ==========================================
+# Python Microservices & Packages
+# ==========================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pytest & Coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.pyo
+.hypothesis/
+
+# Jupyter & MLOps cache
+.ipynb_checkpoints
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# ==========================================
+# JavaScript & TypeScript Services (Node / Bun / Deno)
+# ==========================================
+# Dependencies
+node_modules/
+jspm_packages/
+.pnpm-store/
+
+# Cache & Build outputs
+.npm/
+.eslintcache
+.stylelintcache
+.rzls.json
+.tsbuildinfo
+.next/
+.nuxt/
+.vuepress/dist
+.out/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Serverless & Framework caches
+.serverless/
+.fusebox/
+.dynamodb/
+.terragrunt-cache/
+
+# ==========================================
+# Go Microservices (Golang)
+# ==========================================
+# Binaries for programs and tests
+*.exe
+*.test
+*.out
+*.app
+*.bin
+
+# Architecture-specific build outputs (unanchored — applies per service in monorepo)
+bin/
+pkg/
+
+# Go build cache
+.gocache/
+
+# Go vendor directory (uncomment if relying strictly on go modules without local vendoring)
+# vendor/
+
+# ==========================================
+# Monorepo / Microservice Tooling & CI/CD
+# ==========================================
+# Docker & Local Dev
+.docker/
+*.log
+
+# Terraform / Infrastructure
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# TurboRepo & Nx Caches
+.turbo/
+.nx/
